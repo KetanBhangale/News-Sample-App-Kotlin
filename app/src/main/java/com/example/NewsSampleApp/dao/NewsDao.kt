@@ -1,6 +1,8 @@
 package com.example.NewsSampleApp
 
 import android.util.Log
+import com.example.NewsSampleApp.model.Articles
+import com.example.NewsSampleApp.model.News
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

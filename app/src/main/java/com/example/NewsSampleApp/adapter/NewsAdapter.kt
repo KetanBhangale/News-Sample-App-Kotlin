@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.NewsSampleApp.model.Articles
 
 class NewsAdapter(private val newsList:ArrayList<Articles>, private val listener: INewsAdapter): RecyclerView.Adapter<NewsAdapter.NewsViewHoder>() {
 

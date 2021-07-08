@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //comment added
+        //comment added
         setContentView(R.layout.activity_main)
 
         context = this@MainActivity

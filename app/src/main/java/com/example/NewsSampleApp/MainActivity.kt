@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
         super.onCreate(savedInstanceState)
         //comment added
         //comment added
+        //comment added
         setContentView(R.layout.activity_main)
 
         context = this@MainActivity

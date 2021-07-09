@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 //GET https://newsapi.org/v2/top-headlines?country=us&apiKey=
 const val BASE_URL = "https://newsapi.org/"
-const val API_KEY = "Add_Your_API_KEY_Here"
+const val API_KEY = "7a0070dd915247bab7d4bf6f34264557"
 interface IRetrofit{
     @GET("v2/top-headlines?apiKey=$API_KEY")
     fun getHeadLines(@Query("country") country: String, @Query("page")page: Int): Call<News>

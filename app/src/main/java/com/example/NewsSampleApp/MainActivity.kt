@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
 
     }
 
+
     override fun onItemClicked(article: Articles) {
         val coolorInt: Int = Color.parseColor("#FF6200EE") //red
         val builder = CustomTabsIntent.Builder();

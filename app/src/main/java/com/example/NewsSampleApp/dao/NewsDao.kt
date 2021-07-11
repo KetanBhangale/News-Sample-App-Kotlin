@@ -8,7 +8,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class NewsDao(val listener: ISuccessListener) {
-
+//comment added by KetanBhangale04 User
     fun getNews(){
         val news: Call<News> = NewsService.retrofitInstance.getHeadLines("in", 1)
         Log.i("url","${news.request().toString()}")

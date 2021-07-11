@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
         //comment added
         //comment added
         //comment added
+        //comment added by KetanBhangale04 User
         setContentView(R.layout.activity_main)
 
         context = this@MainActivity

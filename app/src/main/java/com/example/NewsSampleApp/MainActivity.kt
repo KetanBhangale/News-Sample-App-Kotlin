@@ -3,9 +3,11 @@ package com.example.NewsSampleApp
 import android.content.Context
 import android.graphics.Color
 import android.net.Uri
+import android.os.AsyncTask
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.browser.customtabs.CustomTabsIntent
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -15,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+
 
 class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
     lateinit var adapter: NewsAdapter
@@ -39,6 +42,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
 
 
     override fun onItemClicked(article: Articles) {
+        //This is a interface function
         val coolorInt: Int = Color.parseColor("#FF6200EE") //red
         val builder = CustomTabsIntent.Builder();
         builder.setToolbarColor(coolorInt)
@@ -74,5 +78,7 @@ class MainActivity : AppCompatActivity(), INewsAdapter, ISuccessListener {
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
     }
+
+
 
 }
